@@ -1,0 +1,10 @@
+	    const string TessractData = @"tessdata\";
+            Bitmap bmp = new Bitmap(@"eurotext.tif");
+            pictureBox1.Image = bmp;
+            tessnet2.Tesseract ocr = new tessnet2.Tesseract();
+            ocr.Init(TessractData, "eng", false);
+            List<tessnet2.Word> r1 = ocr.DoOCR(bmp, Rectangle.Empty);
+            string txt = "";
+            foreach (tessnet2.Word word in r1)
+                txt+= word.Text;
+            label1.Text = txt;

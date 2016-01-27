@@ -1,0 +1,11 @@
+c:\users\administrator\documents\visual studio 2012\Projects\wuhun\wuhun\bin\Debug\wuhun.exe.config
+c:\users\administrator\documents\visual studio 2012\Projects\wuhun\wuhun\obj\Debug\wuhun.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2012\Projects\wuhun\wuhun\obj\Debug\wuhun.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wuhun\wuhun\bin\Debug\wuhun.exe
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wuhun\wuhun\bin\Debug\wuhun.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wuhun\wuhun\obj\Debug\wuhun.exe
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wuhun\wuhun\obj\Debug\wuhun.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wuhun\wuhun\obj\Debug\wuhun.Form1.resources
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wuhun\wuhun\bin\Debug\tessnet2_32.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wuhun\wuhun\bin\Debug\tesseractengine3.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\wuhun\wuhun\obj\Debug\wuhun.csprojResolveAssemblyReference.cache

@@ -1,0 +1,34 @@
+	using tesseract;
+	string TessractData = Application.StartupPath + @"\tessdata\";
+            using (Bitmap bmp2 = new Bitmap("eurotext.tif"))
+            {
+                TesseractProcessor processor = new TesseractProcessor();
+                bool b = processor.Init(TessractData, "chi_sim", 3);
+		processor.SetVariable("tessedit_char_whitelist", "0123456789"); 
+                //processor.SetVariable("tessedit_pageseg_mode", "3");
+                processor.Clear();
+                processor.ClearAdaptiveClassifier();
+                result = processor.Apply(@"01.bmp");
+                label1.Text = result;
+            }
+
+
+		_ocrProcessor.DoMonitor = true;
+            string TessractData = Application.StartupPath + @"\tessdata\";
+            using (Bitmap bmp2 = new Bitmap("eurotext.tif"))
+            {
+                TesseractProcessor processor = new TesseractProcessor();
+		processor.DoMonitor = true;
+                bool b = processor.Init(TessractData, "chi_sim", 7);
+                //processor.SetVariable("tessedit_char_whitelist", "0123456789"); 
+                //processor.SetVariable("tessedit_pageseg_mode", "3");
+                processor.Clear();
+                processor.ClearAdaptiveClassifier();
+                System.Text.Encoding.GetEncoding("gbk");
+                //string result = processor.Apply(imgPath);
+                byte[] buffer1 = Encoding.Default.GetBytes(processor.Apply(imgPath));
+                byte[] buffer2 = Encoding.Convert(Encoding.UTF8, Encoding.Default, buffer1, 0, buffer1.Length);
+                string strBuffer = Encoding.Default.GetString(buffer2, 0, buffer2.Length);
+                textBox1.Text = strBuffer;// strBuffer;
+                
+            }
